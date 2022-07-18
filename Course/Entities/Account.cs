@@ -1,6 +1,6 @@
-﻿namespace ConsoleApp1.Entities
+﻿namespace Course.Entities
 {
-    internal class Account
+    class Account
     {
         public int Number { get; private set; }
         public string Holder { get; private set; }
@@ -16,9 +16,9 @@
             Holder = holder;
             Balance = balance;
         }
-        public void Withdraw(double amount)
+        public virtual void Withdraw(double amount)
         {
-            Balance -= amount;
+            Balance -= amount + 5.0;
         }
         public void Deposit(double amount)
         {

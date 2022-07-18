@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Entities
+﻿namespace Course.Entities
 {
     class BusinessAccount : Account
     {
